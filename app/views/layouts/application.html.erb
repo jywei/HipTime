@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hiptime</title>
+  <title>HipTime</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="nav-bar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
         <%= link_to "HipTime", root_path, class: "navbar-brand" %>
@@ -32,6 +33,7 @@
   <div class="container">
     <%= yield %>
   </div>
+  <br>
 
 </body>
 </html>
